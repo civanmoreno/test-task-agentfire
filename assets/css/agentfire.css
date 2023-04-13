@@ -1,0 +1,22 @@
+.navbar-logo{
+    background: black !important;
+}
+.container-agentfire{
+    background: #c9bebe;
+}
+#tags{
+    text-align: center;
+    margin: 10px;
+    padding: 30px;
+    border: 1px solid #0c0c0c;
+    background: #fff;
+}
+#tags-ul{
+    list-style: none;
+}
+#tags-ul li{
+    margin: 10px;
+}
+.form-search-tags{
+    margin: 10px;
+}
