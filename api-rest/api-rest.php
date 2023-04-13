@@ -5,6 +5,10 @@ function agentfire_test_rest_api_init() {
 		'methods' => 'GET',
 		'callback' => 'agentfire_test_rest_api_callback'
 	) );
+	register_rest_route( 'api/v1', '/getAccessToken', array(
+		'methods' => 'GET',
+		'callback' => 'agentfire_test_get_access_token_callback'
+	) );
 }
 add_action( 'rest_api_init', 'agentfire_test_rest_api_init' );
 
@@ -35,4 +39,11 @@ function agentfire_test_rest_api_callback( $request ){
 		return new WP_REST_Response( ['status' => ''] );
 	}
 
+}
+
+// Callback get access token.
+function agentfire_test_get_access_token_callback( $request ) {
+	$data = ['token' =>get_option('agentfire_token')];
+	$response = new WP_REST_Response( $data );
+	return $response;
 }
