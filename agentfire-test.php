@@ -28,5 +28,8 @@ include( plugin_dir_path( __FILE__ ) . 'post/post.php');
 // Include file api.
 include( plugin_dir_path( __FILE__ ) . 'api-rest/api-rest.php');
 
+// Including shortcodes.
+include( plugin_dir_path( __FILE__ ) . 'src/shortcodes/shortcodes.php');
 
-
+// Including Settings Page Config.
+include( plugin_dir_path( __FILE__ ) . 'src/admin/admin.php');
