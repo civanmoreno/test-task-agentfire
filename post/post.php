@@ -10,6 +10,8 @@ function create_marks_post_type() {
 			'public' => true,
 			'menu_icon' => 'dashicons-admin-post',
 			'supports' => array('title'),
+			'taxonomies' => array( 'post_tag' )
+
 		)
 	);
 }
