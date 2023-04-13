@@ -25,7 +25,8 @@ require AGENTFIRE_TEST_PATH . 'vendor/autoload.php';
 // Include post to create post type.
 include( plugin_dir_path( __FILE__ ) . 'post/post.php');
 
-
+// Include file api.
+include( plugin_dir_path( __FILE__ ) . 'api-rest/api-rest.php');
 
 
 
