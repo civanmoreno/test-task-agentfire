@@ -39,6 +39,8 @@
                                     <label>{{ tag.name }} ({{ tag.count }})</label>
                                 </li>
                             {% endfor %}
+                        {% else %}
+                            <span>NO ITEMS FOUND.</span>
                         {% endif %}
                     </ul>
                 </div>
