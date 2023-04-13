@@ -46,7 +46,12 @@ function agentfire_test_enqueue_scripts() {
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'bootstrap-js', plugins_url('vendor/twbs/bootstrap/dist/js/bootstrap.min.js', __FILE__),  array('jquery'), '5.3', true );
 
-    wp_enqueue_script( 'agentfire-js', plugins_url('/assets/js/agentfire.js', __FILE__), array(), '1.0.0', true );
+	if (is_user_logged_in()) {
+		wp_enqueue_script( 'agentfire-js', plugins_url('/assets/js/agentfire-admin.js', __FILE__), array(), '1.0.0', true );
+	}else{
+		wp_enqueue_script( 'agentfire-js', plugins_url('/assets/js/agentfire-guest.js', __FILE__), array(), '1.0.0', true );
+	}
+
     wp_enqueue_script( 'mapbox-js', 'https://api.mapbox.com/mapbox-gl-js/v2.14.0/mapbox-gl.js', array(), '1.0.0', true );
 
 }

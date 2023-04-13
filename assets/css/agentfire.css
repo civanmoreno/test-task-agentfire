@@ -20,3 +20,15 @@
 .form-search-tags{
     margin: 10px;
 }
+.select2-dropdown{
+    z-index: 11111 !important;
+}
+.alert-success{
+    display: none;
+}
+.pop-up-info h3{
+    font-size: 12px !important;
+}
+.pop-up-info .mapboxgl-popup-close-button{
+    display: none !important;
+}
