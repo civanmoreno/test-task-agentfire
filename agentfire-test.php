@@ -29,10 +29,10 @@ include( plugin_dir_path( __FILE__ ) . 'post/post.php');
 include( plugin_dir_path( __FILE__ ) . 'api-rest/api-rest.php');
 
 // Including shortcodes.
-include( plugin_dir_path( __FILE__ ) . 'src/shortcodes/shortcodes.php');
+include( plugin_dir_path( __FILE__ ) . 'shortcodes/shortcodes.php');
 
 // Including Settings Page Config.
-include( plugin_dir_path( __FILE__ ) . 'src/admin/admin.php');
+include( plugin_dir_path( __FILE__ ) . 'admin/admin.php');
 
 // Add bootstrap and custom css.
 function agentfire_test_enqueue_styles() {
