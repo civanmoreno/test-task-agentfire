@@ -2,11 +2,11 @@
 
 declare( strict_types=1 );
 
-namespace AgentFire\Plugin\Test\Traits;
+namespace AgentFire\Plugin\Task\Traits;
 
 /**
  * Trait Singleton
- * @package AgentFire\Plugin\Test
+ * @package AgentFire\Plugin\Task
  */
 trait Singleton {
 	/**

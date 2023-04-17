@@ -2,14 +2,14 @@
 
 declare( strict_types=1 );
 
-namespace AgentFire\Plugin\Test;
+namespace AgentFire\Plugin\Task;
 
 use Twig\{Environment, Loader};
-use AgentFire\Plugin\Test\Traits\Singleton;
+use AgentFire\Plugin\Task\Traits\Singleton;
 
 /**
  * Class Template
- * @package AgentFire\Plugin\Test
+ * @package AgentFire\Plugin\Task
  *
  * Usage example: Template::getInstance()->display( 'main.twig' );
  */
@@ -26,7 +26,7 @@ class Template {
 	 */
 	public function __construct() {
 		$this->twig = new Environment(
-			new Loader\FilesystemLoader( AGENTFIRE_TEST_PATH . 'template/test' )
+			new Loader\FilesystemLoader( AGENTFIRE_TEST_PATH . 'template/task' )
 		);
 	}
 

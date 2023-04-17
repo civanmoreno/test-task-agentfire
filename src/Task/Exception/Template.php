@@ -2,9 +2,9 @@
 
 declare( strict_types=1 );
 
-namespace AgentFire\Plugin\Test\Exception;
+namespace AgentFire\Plugin\Task\Exception;
 
-use AgentFire\Plugin\Test\Exception;
+use AgentFire\Plugin\Task\Exception;
 
 /**
  * Class Template
